@@ -4,25 +4,46 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-  #hp  {
+  /* #hp  {
   float: right;
    margin: 0 0 0 50px;
-  }
+  } */
+
+.annotate{
+  background-color: #cfcfcf;
+  width: 1500px;
+  height: 100px;
+}
+
+.caption{
+  position: absolute;
+  margin-left: 25px;
+}
 
 .container{
 	position: relative;
 	margin-left: 25px;
 	background-color: #cfcfcf;
 	width: 1500px;
-	height: 320px;
+	height: 290px;
 	display: block;
 	overflow: hidden;
 	border:none;
 }
 
+p{
+	font-family:"Oswald", serif;;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 14px;
+	color: white;
+	text-align: right;
+	padding-top:10px;
+}
 
 .item { width: 15px; height:280px; position:absolute; background-size: cover; background-position: center;  background-color:grey;
         -webkit-transition: -webkit-transform 0 ease, width 0 ease;}
+
 
 .scale{
 	position: absolute;
@@ -32,11 +53,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 
-.color1{border-bottom: 10px solid #ffe6e6;}
+.color1{border-bottom: 10px solid #eee3e7;}
 .color2{border-bottom: 10px solid #ff9999;}
 .color3{border-bottom: 10px solid #ff6666;}
 .color4{border-bottom: 10px solid #e60000;}
 .color5{border-bottom: 10px solid #990000;}
+.color6{border-bottom: 10px solid #eee3e7;}
+.color7{border-bottom: 10px solid #ff9999;}
+.color8{border-bottom: 10px solid #ff6666;}
+.color9{border-bottom: 10px solid #e60000;}
+.color10{border-bottom: 10px solid #990000;}
 
 .fixed{
     overflow: hidden;
@@ -65,31 +91,23 @@ span{
 
 }
 
-p{
-	font-family:'Nanum Myeongjo', serif;;
-	font-size: 12px;
-	font-weight: 100;
-	line-height: 14px;
-	color: white;
-	text-align: left;
-	padding-top:10px;
-}
 
 .gallery{
-	position: absolute;
-	top:100vh;
+	position: relative;
+	/* top:100vh; */
 	width: 100vw;
-
 }
 
 .row{
 	position: relative;
 	right: 10px;
 	width: 100vw;
-	padding: 20px 10px;
+	padding: 20px 10px 0px 10px;
 	background-color: #cfcfcf;
 	overflow: hidden;
 }
+
+
 
 
 .title{
@@ -221,4 +239,8 @@ figcaption{
 	width: 170px;
     position: absolute;
 	display: block;
+}
+
+.slider {
+  text-align: center;
 }
