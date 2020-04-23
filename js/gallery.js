@@ -43,7 +43,7 @@ $(".item").mouseout(function(e) {
 
 $(".item").on("click", function(){
 	var detail = "images/dresses/"+($(this).data().order+1)+".png";
-	showModal(detail,$(this).data().color);
+	showModal(detail,$(this).data().order);
 	console.log(detail);
 })
 
@@ -52,6 +52,7 @@ var $data = [];
 window.onload = function() { init() };
 
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1lv1zN2sdFnHVO8OidUGrB2B_nAYpP_SFoRNCJQeSbNc/pubhtml';
+//var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1v9tZABDsdIgZ28iCHM7x24ssXATw41bbx08-N0-PHKE/pubhtml';
 
 function init() {
   Tabletop.init( { key: public_spreadsheet_url,
@@ -87,35 +88,36 @@ function showModal(detail,set) {
    var $png3 = $("<img>").attr("src","images/items/"+set+"/3.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
 
 
-   console.log(set);
-   switch (set) {
-    case "color1":
-        var i = 0;
-        break;
-    case "color2":
-        var i = 1;
-        break;
-    case "color3":
-        var i = 2;
-        break;
-    case "color4":
-        var i = 3;
-        break;
-    case "color5":
-        var i = 4;
-        break;
-	}
-   var $text = $("<h4>").text($data[i].description);
-   var $caption1 = $("<figcaption>").html($data[i].cap1+"<br/><span>"+$data[i].by1+"</span>");
-   var $caption2 = $("<figcaption>").html($data[i].cap2+"<br/><span>"+$data[i].by2+"</span>");
-   var $caption3 = $("<figcaption>").html($data[i].cap3+"<br/><span>"+$data[i].by3+"</span>");
+  //  console.log(set);
+  //  switch (set) {
+  //   case "color1":
+  //       var i = 0;
+  //       break;
+  //   case "color2":
+  //       var i = 1;
+  //       break;
+  //   case "color3":
+  //       var i = 2;
+  //       break;
+  //   case "color4":
+  //       var i = 3;
+  //       break;
+  //   case "color5":
+  //       var i = 4;
+  //       break;
+	// }
+
+   // var $text = $("<h4>").text($data[i].description);
+   // var $caption1 = $("<figcaption>").html($data[i].cap1+"<br/><span>"+$data[i].by1+"</span>");
+   // var $caption2 = $("<figcaption>").html($data[i].cap2+"<br/><span>"+$data[i].by2+"</span>");
+   // var $caption3 = $("<figcaption>").html($data[i].cap3+"<br/><span>"+$data[i].by3+"</span>");
 
 
 
-   $title.append($text);
-   $figure1.append($png1).append($caption1);
-   $figure2.append($png2).append($caption2);
-   $figure3.append($png3).append($caption3);
+   // $title.append($text);
+   $figure1.append($png1)//.append($caption1);
+   $figure2.append($png2)//.append($caption2);
+   $figure3.append($png3)//.append($caption3);
 
 
 
