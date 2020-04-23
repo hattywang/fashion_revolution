@@ -203,6 +203,7 @@ h4{
 	left:70px;
 	display: block;
 	padding-right: 50px;
+  padding-left: 75px;
 }
 
 
@@ -229,10 +230,10 @@ li{
 
 figcaption{
 	font-family: 'Nanum Myeongjo', serif;
-	font-size: 13px;
+	font-size: 11px;
 	font-weight: 300;
 	color: white;
-	text-align: left;
+	text-align: right;
 	margin-top: 0;
 	top:400px;
 	padding-left: 10px;

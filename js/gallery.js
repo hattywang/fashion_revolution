@@ -61,11 +61,12 @@ function init() {
 }
 
 function showInfo(data, tabletop) {
+  console.log("here")
   console.log(data);
   $data = data;
 }
 
-function showModal(detail,set) {
+function showModal(detail,i) {
 
 
    $(".modal").empty();
@@ -81,11 +82,11 @@ function showModal(detail,set) {
    var $section = $('<div>').addClass("section");
    var $title = $('<div>').addClass("description");
    var $figure1 = $("<figure>");
-   var $png1 = $("<img>").attr("src","images/items/"+set+"/1.jpg").addClass("png").attr('data-pin-hover', "true").css({width: '200px',heigth: '1000px'});
+   var $png1 = $("<img>").attr("src","images/items/"+i+"/1.jpg").addClass("png").attr('data-pin-hover', "true").css({width: '200px',heigth: '1000px'});
    var $figure2 = $("<figure>");
-   var $png2 = $("<img>").attr("src","images/items/"+set+"/2.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
+   var $png2 = $("<img>").attr("src","images/items/"+i+"/2.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
    var $figure3 = $("<figure>");
-   var $png3 = $("<img>").attr("src","images/items/"+set+"/3.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
+   var $png3 = $("<img>").attr("src","images/items/"+i+"/3.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
 
 
   //  console.log(set);
@@ -106,18 +107,19 @@ function showModal(detail,set) {
   //       var i = 4;
   //       break;
 	// }
+  console.log($data[i])
 
-   // var $text = $("<h4>").text($data[i].description);
-   // var $caption1 = $("<figcaption>").html($data[i].cap1+"<br/><span>"+$data[i].by1+"</span>");
-   // var $caption2 = $("<figcaption>").html($data[i].cap2+"<br/><span>"+$data[i].by2+"</span>");
-   // var $caption3 = $("<figcaption>").html($data[i].cap3+"<br/><span>"+$data[i].by3+"</span>");
+   var $text = $("<h4>").text($data[i].description);
+   var $caption1 = $("<figcaption>").html($data[i].cap1+"<br/><span>"+$data[i].by1+"</span>");
+   var $caption2 = $("<figcaption>").html($data[i].cap2+"<br/><span>"+$data[i].by2+"</span>");
+   var $caption3 = $("<figcaption>").html($data[i].cap3+"<br/><span>"+$data[i].by3+"</span>");
 
 
 
-   // $title.append($text);
-   $figure1.append($png1)//.append($caption1);
-   $figure2.append($png2)//.append($caption2);
-   $figure3.append($png3)//.append($caption3);
+   $title.append($text);
+   $figure1.append($png1).append($caption1);
+   $figure2.append($png2).append($caption2);
+   $figure3.append($png3).append($caption3);
 
 
 
