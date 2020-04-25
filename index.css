@@ -166,7 +166,7 @@ h4{
 }
 
 .modal {
-  width: 900px;
+  width: 1000px;
   height: 500px;
   position: fixed;
   top: 20vh;
@@ -192,8 +192,8 @@ h4{
 .section{
 	position: absolute;
 	top:0;
-	right:60px;
-	width: 650px;
+	right:50px;
+	width: 730px;
 }
 
 .description{
@@ -202,8 +202,8 @@ h4{
 	top:20px;
 	left:70px;
 	display: block;
-	padding-right: 50px;
-  padding-left: 75px;
+	padding-right: 70px;
+  padding-left: 100px;
 }
 
 
@@ -211,14 +211,14 @@ ul{
 	position: absolute;
 	width: 100%;
 	top:60px;
-	left:100px;
+	left:120px;
 	display: block;
-	padding-right: 500px;}
+	padding-right: 120px;}
 
 
 li{
 	display: inline-block;
-	width: 100px;
+	width: 120px;
 	padding-right: 100px;
 }
 

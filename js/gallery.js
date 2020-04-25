@@ -71,7 +71,7 @@ function showModal(detail,i) {
 
    $(".modal").empty();
    //left div
-   var $img = $("<img>").attr("src",detail).addClass("detail");
+   var $img = $("<img>").attr("src",detail).addClass("detail").css({width: '308px',heigth: '520px'});
    $img.attr("nopin","nopin");
    var $div = $("<div>");
    $div.append($img);
@@ -84,9 +84,9 @@ function showModal(detail,i) {
    var $figure1 = $("<figure>");
    var $png1 = $("<img>").attr("src","images/items/"+i+"/1.jpg").addClass("png").attr('data-pin-hover', "true").css({width: '200px',heigth: '1000px'});
    var $figure2 = $("<figure>");
-   var $png2 = $("<img>").attr("src","images/items/"+i+"/2.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
+   var $png2 = $("<img>").attr("src","images/items/"+i+"/2.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
    var $figure3 = $("<figure>");
-   var $png3 = $("<img>").attr("src","images/items/"+i+"/3.jpg").addClass("png").css({width: '170px',heigth: '1000px'})
+   var $png3 = $("<img>").attr("src","images/items/"+i+"/3.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
 
 
   //  console.log(set);
