@@ -171,9 +171,7 @@ h4{
   position: fixed;
   top: 20vh;
   margin: 0 auto;
-  padding:0 auto;
-  left: 0;
-  right: 80;
+  left: 230px;
   background-color:rgba(40,40,40,.9);
   padding:10px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
@@ -203,14 +201,14 @@ h4{
 	left:70px;
 	display: block;
 	padding-right: 70px;
-  padding-left: 100px;
+  padding-left: 300px;
 }
 
 
 ul{
 	position: absolute;
 	width: 100%;
-	top:60px;
+	top:100px;
 	left:120px;
 	display: block;
 	padding-right: 120px;}
@@ -235,7 +233,7 @@ figcaption{
 	color: white;
 	text-align: right;
 	margin-top: 0;
-	top:400px;
+	top:350px;
 	padding-left: 10px;
 	width: 170px;
     position: absolute;
