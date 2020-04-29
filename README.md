@@ -20,6 +20,7 @@ References:
 - https://www.pinterest.com/pin/831828993657054560/
 - https://vintagedancer.com/1940s/1940s-dresses/
 - https://www.pinterest.com/pin/5136987062961263/?d=t&mt=login
+- https://www.hollywood.com/celebrities/hunks-of-hollywood-past-60203263/#/ms-20763/14
 
 
 1950
