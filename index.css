@@ -12,7 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .annotate{
   background-color: #cfcfcf;
   width: 1500px;
-  height: 100px;
+  height: 50px;
 }
 
 .caption{
@@ -101,7 +101,7 @@ span{
 .row{
 	position: relative;
 	right: 10px;
-	width: 100vw;
+	width: 150vw;
 	padding: 20px 10px 0px 10px;
 	background-color: #cfcfcf;
 	overflow: hidden;
@@ -242,4 +242,5 @@ figcaption{
 
 .slider {
   text-align: center;
+  background-color: #cfcfcf;
 }
