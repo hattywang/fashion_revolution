@@ -9,10 +9,27 @@ for(var i = 0; i < 20; i++){
 
 var idx1 = 1;
 $(".dress").each(function() {
-    $(this).css({left: (idx1-1) * 70});
+    $(this).css({left: (idx1-1) * 70, top: idx1*3, bottom:idx1*3+290});
     $(this).css({"width": "70px", "-webkit-transform": "translate(0,0)"});
     $(this).css("background-image", "url("+"images/dresses/"+idx1+".png)");
     idx1++;
+});
+
+$container2 = $(".two");
+
+for(var i = 0; i < 20; i++){
+  $img = $("<div>").addClass("item men").attr("data-order", i);
+  $img.addClass("color"+String(Math.floor(i/2)+1)).attr("data-color", "color"+String(Math.floor(i/2)+1));
+  $container2.append($img);
+}
+
+
+var idx2 = 1;
+$(".men").each(function() {
+    $(this).css({left: (idx2-1) * 70, top: 50-idx2*3, bottom:340-idx2*3});
+    $(this).css({"width": "70px", "-webkit-transform": "translate(0,0)"});
+    $(this).css("background-image", "url("+"images/men/"+idx2+".png)");
+    idx2++;
 });
 
 
@@ -88,25 +105,6 @@ function showModal(detail,i) {
    var $figure3 = $("<figure>");
    var $png3 = $("<img>").attr("src","images/items/"+i+"/3.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
 
-
-  //  console.log(set);
-  //  switch (set) {
-  //   case "color1":
-  //       var i = 0;
-  //       break;
-  //   case "color2":
-  //       var i = 1;
-  //       break;
-  //   case "color3":
-  //       var i = 2;
-  //       break;
-  //   case "color4":
-  //       var i = 3;
-  //       break;
-  //   case "color5":
-  //       var i = 4;
-  //       break;
-	// }
   console.log($data[i])
 
    var $text = $("<h4>").text($data[i].description);
