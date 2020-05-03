@@ -2,9 +2,9 @@ var formatDate = d3.timeFormat("%Y");
 
 console.log("slider")
 var startDate = new Date("1920-04-01"),
-    endDate = new Date("2020-01-01");
+    endDate = new Date("2030-01-01");
 
-var margin = {top:0, right:50, bottom:0, left:50},
+var margin = {top:0, right:25, bottom:0, left:25},
     width = 480 -margin.left - margin.right,
     height = 150 - margin.top - margin.bottom;
 
@@ -46,13 +46,16 @@ slider.insert("g", ".track-overlay")
     .attr("class", "ticks")
     .attr("transform", "translate(0," + 18 + ")")
   .selectAll("text")
-    .data(x.ticks(12))
+    .data(x.ticks(13))
     .enter()
     .append("text")
     .attr("x", x)
     .attr("y", 10)
     .attr("text-anchor", "middle")
-    .text(function(d) { return formatDate(d); })
+    .text(function(d) {
+        console.log(d);
+        if (formatDate(d)==="2030") {return "Future";}
+        else {return formatDate(d);} })
         .attr("font-family", "sans-serif")
         .attr("font-size", "12px")
         .attr("fill", "#ff6666");
@@ -83,25 +86,33 @@ function showPic(h) {
   var index = Math.ceil(h.getYear()/5) - 4
 
   if (index < 0) {index = 0;}
-  else if (index > 19) {index = 19;}
+  else if (index===20) {index = 19;}
 
   console.log(index)
 
-  var filter = "*[data-order=\""+String(index) + "\"]"
-	var current = $(filter).data().order;
-  console.log(current);
+  if (index >= 21 ) {
+    $("#confetti").show();
+    $("#future").show();
 
-	var leftdif = ((current/20)*145)/current;
-	var rightdif = (145-((current/20)*145))/(19-current);
-	var wid = 70-(145-70)/20;
+      $('html, body').addClass("fixed");
 
-	$(".item").css({"width": "70px", "-webkit-transform": "translate(0,0)"})
-	$(filter).css({"width": "215px",  "-webkit-transform": "translate(-"+(current/20)*145+"px,0)"});
-	$(filter).prevAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate(-"+$(this).data().order*leftdif+"px,0)"});});
-	$(filter).nextAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate("+(20-$(this).data().order)*rightdif+"px,0)"});});
+  } else {
 
-  $('<p style="color:'+colors[Math.floor((index % 10) /2)]+';">'+(1920+Math.floor(index/2)*10)+'</p>').appendTo('.caption');
-  $(".caption").css({"left": index*70+"px","width": "215px",  "height": "50px", "-webkit-transform": "translate(-"+(index/20)*145+"px,0)"})
+    var filter = "*[data-order=\""+String(index) + "\"]"
+  	var current = $(filter).data().order;
+    console.log(current);
 
+  	var leftdif = ((current/20)*145)/current;
+  	var rightdif = (145-((current/20)*145))/(19-current);
+  	var wid = 70-(145-70)/20;
+
+  	$(".item").css({"width": "70px", "-webkit-transform": "translate(0,0)"})
+  	$(filter).css({"width": "215px",  "-webkit-transform": "translate(-"+(current/20)*145+"px,0)"});
+  	$(filter).prevAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate(-"+$(this).data().order*leftdif+"px,0)"});});
+  	$(filter).nextAll(".item").each(function() {$( this ).css({"width": wid+"px", "-webkit-transform": "translate("+(20-$(this).data().order)*rightdif+"px,0)"});});
+
+    $('<p style="color:'+colors[Math.floor((index % 10) /2)]+';">'+(1920+Math.floor(index/2)*10)+'</p>').appendTo('.caption');
+    $(".caption").css({"left": index*70+"px","width": "215px",  "height": "50px", "-webkit-transform": "translate(-"+(index/20)*145+"px,0)"})
+  }
 
 }

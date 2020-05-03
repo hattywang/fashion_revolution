@@ -58,24 +58,23 @@ $(".item").mouseout(function(e) {
   $(".caption").empty();
 });
 
-$(".item").on("click", function(){
+$(".dress").on("click", function(){
 	var detail = "images/dresses/"+($(this).data().order+1)+".png";
-	showModal(detail,$(this).data().order);
+	showModal("dress",detail,$(this).data().order);
 	console.log(detail);
 })
 
+$(".men").on("click", function(){
+	var detail = "images/men/"+($(this).data().order+1)+".png";
+	showModal("men", detail, $(this).data().order+20);
+	console.log(detail);
+})
+
+
 var $data = [];
 
-window.onload = function() { init() };
+//window.onload = function() { init() };
 
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1lv1zN2sdFnHVO8OidUGrB2B_nAYpP_SFoRNCJQeSbNc/pubhtml';
-//var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1v9tZABDsdIgZ28iCHM7x24ssXATw41bbx08-N0-PHKE/pubhtml';
-
-function init() {
-  Tabletop.init( { key: public_spreadsheet_url,
-                   callback: showInfo,
-                   simpleSheet: true } )
-}
 
 function showInfo(data, tabletop) {
   console.log("here")
@@ -83,10 +82,10 @@ function showInfo(data, tabletop) {
   $data = data;
 }
 
-function showModal(detail,i) {
+function showModal(gender,detail,i) {
 
 
-   $(".modal").empty();
+   $("#style").empty();
    //left div
    var $img = $("<img>").attr("src",detail).addClass("detail").css({width: '308px',heigth: '520px'});
    $img.attr("nopin","nopin");
@@ -99,11 +98,11 @@ function showModal(detail,i) {
    var $section = $('<div>').addClass("section");
    var $title = $('<div>').addClass("description");
    var $figure1 = $("<figure>");
-   var $png1 = $("<img>").attr("src","images/items/"+i+"/1.jpg").addClass("png").attr('data-pin-hover', "true").css({width: '200px',heigth: '1000px'});
+   var $png1 = $("<img>").attr("src","images/items/"+gender+"/"+i+"/1.jpg").addClass("png").attr('data-pin-hover', "true").css({width: '200px',heigth: '1000px'});
    var $figure2 = $("<figure>");
-   var $png2 = $("<img>").attr("src","images/items/"+i+"/2.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
+   var $png2 = $("<img>").attr("src","images/items/"+gender+"/"+i+"/2.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
    var $figure3 = $("<figure>");
-   var $png3 = $("<img>").attr("src","images/items/"+i+"/3.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
+   var $png3 = $("<img>").attr("src","images/items/"+gender+"/"+i+"/3.jpg").addClass("png").css({width: '200px',heigth: '1000px'})
 
   console.log($data[i])
 
@@ -136,10 +135,10 @@ function showModal(detail,i) {
 
    $section.append($title).append($ul);
 
-   $(".modal").append($div).append($section);
+   $("#style").append($div).append($section);
 
-   $(".overlay").show();
-   $(".modal").show();
+   $("#pictures").show();
+   $("#style").show();
 
      $('html, body').addClass("fixed");
 
@@ -147,7 +146,8 @@ function showModal(detail,i) {
 
 function hideModal() {
 
-  $(".overlay").hide();
+  $("#pictures").hide();
+  $("#confetti").hide();
   $(".modal").hide();
 }
 
