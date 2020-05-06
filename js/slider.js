@@ -16,11 +16,12 @@ var svg = d3.select(".slider")
 var x = d3.scaleTime()
     .domain([startDate, endDate])
     .range([0, width])
-    .nice();
+    .clamp(true);
 
 var slider = svg.append("g")
     .attr("class", "slider")
     .attr("transform", "translate(" + margin.left + ",50)");
+
 
 slider.append("line")
     .attr("class", "track")
@@ -39,14 +40,19 @@ slider.append("line")
           update(x.invert(d3.event.x));
          }));
 
-console.log(x.ticks())
+console.log([startDate]+x.ticks()+[endDate])
+
+var ticks = x.ticks();
+ticks.unshift(startDate);
+ticks.push(endDate);
+
 
 
 slider.insert("g", ".track-overlay")
     .attr("class", "ticks")
     .attr("transform", "translate(0," + 18 + ")")
   .selectAll("text")
-    .data(x.ticks(13))
+    .data(ticks)
     .enter()
     .append("text")
     .attr("x", x)
@@ -54,7 +60,7 @@ slider.insert("g", ".track-overlay")
     .attr("text-anchor", "middle")
     .text(function(d) {
         console.log(d);
-        if (formatDate(d)==="2030") {return "Future";}
+        if (formatDate(d)==="2029") {return "Future";}
         else {return formatDate(d);} })
         .attr("font-family", "sans-serif")
         .attr("font-size", "12px")
