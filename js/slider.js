@@ -74,7 +74,7 @@ slider.insert("g", ".track-overlay")
 
 var handle = slider.insert("circle", ".track-overlay")
     .attr("class", "handle")
-    .attr("r", 6)
+    .attr("r", 8)
     .style("fill", "#ff6666");
 
 function update(h) {
