@@ -24,7 +24,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	position: relative;
 	margin-left: 25px;
 	background-color: #cfcfcf;
-	height: 350px;
+	height: 300px;
 	display: block;
 	overflow: hidden;
 	border:none;
@@ -40,7 +40,7 @@ p{
 	padding-top:10px;
 }
 
-.item { width: 15px; height:280px; position:absolute; background-size: cover; background-position: center;  background-color:grey;
+.item { width: 15px; height:250px; position:absolute; background-size: cover; background-position: center;  background-color:grey;
         -webkit-transition: -webkit-transform 0 ease, width 0 ease;}
 
 
@@ -101,7 +101,7 @@ span{
 	position: relative;
 	right: 10px;
 	width: 100vw;
-	padding: 20px 10px 0px 10px;
+	padding: 0px 10px 0px 10px;
 	background-color: #cfcfcf;
 	overflow: hidden;
 }
@@ -193,7 +193,7 @@ h4{
   width: 800px;
   height: 300px;
   position: fixed;
-  top: 50vh;
+  top: 30vh;
   margin: 0 auto;
   left: 330px;
   /* background-color:rgba(255,255,255,0.8); */
