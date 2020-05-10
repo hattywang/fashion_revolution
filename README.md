@@ -1,17 +1,13 @@
 # FP-Le-mode-du-monde-1920-2020
 
 References:
--	https://github.com/clairesunstudio/fashion-viz
--	https://marketplace.asos.com/listing/dresses/cute-vintage-60s-mod-mini-pink-twiggy-dress/3220391
--	https://www.news.com.au/lifestyle/health/diet/supermodel-twiggy-obesity-is-a-tragedy/news-story/676e5557b732ae690a56d12dc9a3104d
--	https://www.stevesascodesigns.com/twiggy-mod-60s-pearl-ball-earrings/
--	https://www.samedelman.com/en-US/Product/EC0222300-3015872/Sam+Edelman/Silver+Leather/Yaro+Block+Heel+Sandal.aspx?gclid=Cj0KCQjwm9D0BRCMARIsAIfvfIYMgLFfFZ9UwaeqMN5r-OgPo2ogj6zcnlm9TXnPjmAyimFWeaeM2n4aAti2EALw_wcB#
--	https://www.marieclaire.co.uk/fashion/1920s-fashion-icons-who-defined-twenties-style-92566
--	https://www.pinterest.com/pin/184858759674903429/
--	https://www.pinterest.com/pin/297308012871842602/
--
+-	Fish Eye View: https://github.com/clairesunstudio/fashion-viz
+- Confetti:https://codepen.io/linrock/pen/Amdhr/?fbclid=IwAR3FMj0dNa2_i35VRXbsABKxDfBpJXF259aQ_3hLWLStpszFY5aaUYpEPcE
+
+Fashion Images: 
 1920
 women
+-	https://www.marieclaire.co.uk/fashion/1920s-fashion-icons-who-defined-twenties-style-92566
 - https://www.pinterest.com.mx/pin/266486502933350404/
 - https://www.harrods.com/en-us/shopping/chloe-silk-pussybow-blouse-15354544
 - https://www.harrods.com/en-us/shopping/ralph-lauren-pleated-midi-skirt-15399788
@@ -25,6 +21,7 @@ men
 1930
 women
 - https://www.pinterest.com.mx/pin/613615517963167816/
+- https://www.pinterest.com/pin/184858759674903429/
 - https://www.harrods.com/en-us/shopping/philip-treacy-floral-detail-pillbox-hat-with-veil-15220105
 - https://www.harrods.com/en-us/shopping/manolo-blahnik-embellished-shufti-pumps-90-14857101
 - https://www.bergdorfgoodman.com/p/zimmermann-kirra-shirred-tiered-long-dress-prod151320105?childItemId=BGTZLF8_&uuid=PDP_PAGINATION_646e39932d6c51f4b4a500aef6f86f5f_-q-QkLBp8y0rF6m-tch2vf0ALvjd2-r04_Bn9rpd.jsession&page=0&position=112&navpath=cat000000_cat000002_cat441206_cat80001
@@ -36,6 +33,7 @@ men
 
 1940
 women
+- https://www.pinterest.com/pin/297308012871842602/
 - https://www.pinterest.com/pin/831828993657054560/
 - https://vintagedancer.com/1940s/1940s-dresses/
 - https://www.pinterest.com/pin/5136987062961263/?d=t&mt=login
@@ -68,6 +66,10 @@ men
 women
 -  https://www.harpersbazaar.com/fashion/trends/g10201919/60s-fashion-trends/?slide=38
 - https://www.net-a-porter.com/en-au/shop/product/acne-studios/oversized-wool-coat/1213932
+- https://marketplace.asos.com/listing/dresses/cute-vintage-60s-mod-mini-pink-twiggy-dress/3220391
+- -	https://www.news.com.au/lifestyle/health/diet/supermodel-twiggy-obesity-is-a-tragedy/news-story/676e5557b732ae690a56d12dc9a3104d
+-	https://www.stevesascodesigns.com/twiggy-mod-60s-pearl-ball-earrings/
+- -	https://www.samedelman.com/en-US/Product/EC0222300-3015872/Sam+Edelman/Silver+Leather/Yaro+Block+Heel+Sandal.aspx?gclid=Cj0KCQjwm9D0BRCMARIsAIfvfIYMgLFfFZ9UwaeqMN5r-OgPo2ogj6zcnlm9TXnPjmAyimFWeaeM2n4aAti2EALw_wcB
 men
 - https://vintagedancer.com/1960s/1960s-menswear-clothing-fashion-ideas/
 
