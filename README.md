@@ -1,6 +1,6 @@
 # FP-Le-mode-du-monde-1920-2020
 Development Process:
-Yingni mainly worked on the fish eye zoom and ruowang independently delivered the the synchronized slider. Data collection, webpage layout, and remaining project deliverables are shared equally between Yingni and Ruowang.
+Yingni mainly worked on the fish eye zoom and ruowang independently delivered the the synchronized slider. Data collection, webpage layout, and remaining project deliverables are shared equally between Yingni and Ruowang. Please reference our paper in the final folder for more details on the research and development process. 
 
 References:
 -	Fish Eye View: https://github.com/clairesunstudio/fashion-viz
